@@ -9,6 +9,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    ul {
+      list-style-type: none;
+    }
+  </style>
   <title>Title</title>
 </head>
 
@@ -35,22 +40,25 @@
         adding / removing any DOM element.
       </p>
     </div>
-    <div class="row no-gutters text-white">
-      <div class="col-6 text-center d-flex align-items-center justify-content-center bg-success flex-column"
-        style="height: 400px">
-        <p>First Column</p>
-        <p>Height 400px</p>
-        <p>Green-ish background</p>
-        <p>Text centered</p>
-      </div>
-      <div class="col-2 bg-primary d-flex flex-column-reverse p-3">
-        <p>Second Column Text to the bottom</p>
-      </div>
-      <div class="col-4">
-        <div class="row no-gutters h-100">
-          <div class="col-12 bg-warning">Third Column Part 2</div>
-          <div class="col-12 bg-danger">Third Column Part 2</div>
-          <div class="col-12 bg-secondary">Third Column Part 2</div>
+
+    <div class="container border border-light rounded-pill">
+      <div class="row no-gutters text-white">
+        <div class="col-6 text-center d-flex align-items-center justify-content-center bg-success flex-column"
+          style="height: 400px">
+          <p>First Column</p>
+          <p>Height 400px</p>
+          <p>Green-ish background</p>
+          <p>Text centered</p>
+        </div>
+        <div class="col-2 bg-primary d-flex flex-column-reverse p-3">
+          <p>Second Column Text to the bottom</p>
+        </div>
+        <div class="col-4">
+          <div class="row no-gutters h-100">
+            <div class="col-12 bg-warning">Third Column Part 2</div>
+            <div class="col-12 bg-danger">Third Column Part 2</div>
+            <div class="col-12 bg-secondary">Third Column Part 2</div>
+          </div>
         </div>
       </div>
     </div>
@@ -403,25 +411,113 @@
       <!-- aside -->
       <div class="col-12 col-md-4">
         <div class="row">
-          <div class="col-12">
+          <div class="col-12 mb-3">
             <div class="card">
               <div class="card-header">Find in my blog</div>
               <div class="card-body">
-                <form class="form-inline my-2 my-lg-0">
-                  <div class="search-wrapper d-flex w-100">
-                    <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
-                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">
-                      Search
-                    </button>
-                  </div>
+                <form class="form-inline my-2 my-lg-0 flex-nowrap">
+
+                  <input class="form-control w-75" type="search" placeholder="Search" aria-label="Search" />
+                  <button class="btn btn-secondary my-2 my-sm-0" type="submit">
+                    Search
+                  </button>
+
                 </form>
               </div>
             </div>
           </div>
+
+          <div class="col-12 mb-3">
+            <div class="card">
+              <div class="card-header">Categories</div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-6">
+                    <ul>
+                      <li><a href="#">Web Design</a></li>
+                      <li><a href="#">HTML</a></li>
+                      <li><a href="#">CSS</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-6">
+                    <ul>
+                      <li><a href="#">JavaScript</a></li>
+                      <li><a href="#">SASS</a></li>
+                      <li><a href="#">Bootstrap 4</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
+
+
+        <div class="card">
+          <div class="card-header">Widgets</div>
+          <div class="card-body">
+            <p>Usually here you can put all our custom widget to enhance the user experience</p>
+          </div>
+        </div>
+
       </div>
     </div>
+    </div>
+    </div>
   </section>
+
+  <!-- ex 5 -->
+
+  <section class="container my-3">
+    <div class="exercise-text text-center">
+      <h1>Excercise 1</h1>
+      <p>
+        Recreate this table just using Bootstrap4 classes or styling, without
+        adding / removing any DOM element.
+      </p>
+    </div>
+
+    <footer class="container border-top border-info py-5">
+      <div class="row">
+        <div class="col-4">
+          <div class="wrapper d-flex flex-column">
+            <h5 class="font-weight-bold">Features</h5>
+            <a class="text-muted" href="#">Somewhere</a>
+            <a class="text-muted" href="#">Somewhere</a>
+            <a class="text-muted" href="#">Somewhere</a>
+            <a class="text-muted" href="#">Somewhere</a>
+            <a class="text-muted" href="#">Somewhere</a>
+            <a class="text-muted" href="#">Somewhere</a>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="wrapper d-flex flex-column">
+            <h5 class="font-weight-bold">Features</h5>
+            <a class="text-muted" href="#">Somewhere</a>
+            <a class="text-muted" href="#">Somewhere</a>
+            <a class="text-muted" href="#">Somewhere</a>
+            <a class="text-muted" href="#">Somewhere</a>
+            <a class="text-muted" href="#">Somewhere</a>
+            <a class="text-muted" href="#">Somewhere</a>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="wrapper d-flex flex-column">
+            <h5 class="font-weight-bold">Features</h5>
+            <a class="text-muted" href="#">Somewhere</a>
+            <a class="text-muted" href="#">Somewhere</a>
+            <a class="text-muted" href="#">Somewhere</a>
+            <a class="text-muted" href="#">Somewhere</a>
+            <a class="text-muted" href="#">Somewhere</a>
+            <a class="text-muted" href="#">Somewhere</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
